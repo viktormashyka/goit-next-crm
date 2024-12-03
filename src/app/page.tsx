@@ -1,6 +1,9 @@
 import { headers } from 'next/headers';
 import AddCompanyButton from './components/add-company-button';
 import StatusLabel, { Status } from './components/status-label';
+import ServerComponent from './components/server-component';
+import ClientComponent from './components/client-component';
+import ServerComponentCopy from './components/server-component-copy';
 
 export default function Home() {
   console.log(headers());
@@ -15,6 +18,10 @@ export default function Home() {
         <StatusLabel status={Status.Pending}>Pending</StatusLabel>
         <StatusLabel status={Status.Suspended}>Suspended</StatusLabel> */}
         <AddCompanyButton />
+        <ServerComponent />
+        <ClientComponent>
+          <ServerComponentCopy />
+        </ClientComponent>
       </main>
     </div>
   );
