@@ -1,8 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
 
-import countReleasedPrisoner from './my-test';
-
 export enum Status {
   Active = 'Active',
   NotActive = 'NotActive',
