@@ -39,13 +39,13 @@ export interface CompanyFormProps {
 export default function CompanyForm({ onSubmit }: CompanyFormProps) {
   const queryClient = useQueryClient();
 
-  const { data: categories } = useQuery({
+  const { data: categories = [] } = useQuery({
     queryKey: ['categories'],
     queryFn: getCategories,
     staleTime: 10 * 1000,
   });
 
-  const { data: countries } = useQuery({
+  const { data: countries = [] } = useQuery({
     queryKey: ['countries'],
     queryFn: getCountries,
     staleTime: 10 * 1000,
