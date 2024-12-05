@@ -1,4 +1,5 @@
 'use client';
+
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import PromotionFormModal from '@/app/components/promotion-form-modal';
